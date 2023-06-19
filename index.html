@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aydin Chagal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fa5e0be71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- for my name logo in the top left -->
+            <img src="Images/name_logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <div class="header-text">
+            <div class="text-container">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Aydin Chagal</span><br>from Chicago</h1>
+            </div>
+            <img src="Images/prof_pic.JPG">
+        </div>
+    </div>
+</div>
+
+<!---- About ----->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/michigan_logo.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a rising Junior at the University of Michigan majoring in Computer Science and minoring in Economics. 
+                I have had software engineering experiences with various high growth startups at medium and early stages. 
+                I am currently interning as a software engineer at NRECA, based in DC. I have developed a GPT-powered 
+                chatbot designed for company-specific inquiries that will soon be launched for our 42 million customers. I'm also  
+                implementing image recognition software that can identity and classify certain electrical components from drone images. 
+                Finally, two of my friends and I are developing an app called ParkGPT, which combines language learning models 
+                with parking needs. Our app aims to give users a hassle-free experience in finding available parking spaces. 
+                We're working directly with the head of technology at Passport, the company that owns all parking meters 
+                in Ann Arbor and 894 other cities.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experiences')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experiences">
+                    <ul>
+                        <li><span>NRECA - Software Engineer</span><br>Leveraged GPT's API to build fine-tuned chatbot<br>
+                        Developed image recognition software to classify electrical components from drone images (87% accuracy)</li>
+                        <li><span>CyberNest - Software Engineer</span><br>Built pdf summarizer using vector embeddings and phrase similarity scores
+                        <br>Debugged various front-end issues during beta phase<br>Was integral for launch being only the third onboarded engineer</li>
+                        <li><span>Data Scientist - Great Lakes Crystal Technologies</span><br>Used numpy, pandas, and matplot to quantify and
+                        visualize diamond semiconductor defect-rates</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C++, Python, JavaScript, CSS, HTML</li>
+                        <li><span>General</span><br>Data Structures, Algorithms, Web Systems, Discrete Math, Machine Learning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School</span><br>University of Michigan; Bachelor's Computer Science, minor Economics</li>
+                        <li><span>GPA</span><br>3.8/4.0 total GPA<br>3.9/4.0 major GPA</li>
+                        <li><span>Clubs</span><br>Michigan Mars Rover Team, Michigan Hackers, Impact Investing Group</li>
+                        <li><span>Awards</span><br>Dean's Honors (3.8 GPA; 3 semesters)<br>8th highest score in school on Discrete Math final exam (98%)
+                        <br>National Merit Scholar Finalist(awarded to top 5000 SAT scores); score was 1550 (800 Math, 750 EBRW)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------Links-------->
+<div id="links">
+    <div class="container">
+        <h1 class="sub-title">Important Links</h1>
+        <div class="links-list">
+            <a href="https://docs.google.com/document/d/1Pp2UcljrgghvwQ776ye68Gj-8AL2aGj4I2RN6b_VLyQ/edit?usp=sharing" target="_blank">
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Resume</h2>
+                    <p>resume link</p>
+                </div>
+            </a>
+            <a href="https://github.com/achagal" target="_blank">
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>GitHub</h2>
+                    <p>github link</p>
+                </div>
+            </a>
+            <a href="http://www.linkedin.com/in/aydin-chagal-903713210" target="_blank">
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h2>LinkedIn</h2>
+                    <p>linkedin link</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-----Projects----->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="Images/chatbot.png">
+                <div class="layer">
+                    <h3>GPT-Chatbot</h3>
+                    <p>A customized, GPT-powered chat bot designed to answer any NRECA specific questions</p>
+                    <a href="https://github.com/achagal" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/park.png">
+                <div class="layer">
+                    <h3>ParkGPT</h3>
+                    <p>An app that combines language learning models with parking needs. 
+                    Our app aims to give users a hassle-free experience in finding available parking spaces</p>
+                    <a href="https://github.com/achagal" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/chip.png">
+                <div class="layer">
+                    <h3>Diamond Semiconductor Analyzer</h3>
+                    <p>Software purposed to identify and quantify defects in diamond semiconductor chips</p>
+                    <a href="https://github.com/achagal" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----Contact---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> achagal@umich.edu</p>
+                <p><i class="fa-solid fa-phone"></i> 312-508-8249</p>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submmit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+</body>
+</html>
